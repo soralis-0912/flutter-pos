@@ -6,7 +6,7 @@ class Money {
   const Money._();
 
   static final _fc = NumberFormat('#,###.##');
-  static final _fcFull = NumberFormat.simpleCurrency();
+  static final _fcFull = NumberFormat.simpleCurrency(locale:'ja_JP',name:'JPY');
 
   static String get symbol => _fc.currencySymbol;
 
